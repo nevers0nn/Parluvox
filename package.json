@@ -1,0 +1,21 @@
+{
+  "name": "parluvox",
+  "private": true,
+  "workspaces": [
+    "packages/server",
+    "packages/web",
+    "packages/desktop"
+  ],
+  "scripts": {
+    "dev:server": "npm run dev --workspace packages/server",
+    "dev:server:stub": "npm run dev:stub --workspace packages/server",
+    "dev:web": "npm run dev --workspace packages/web",
+    "dev:desktop": "npm run dev --workspace packages/desktop",
+    "test:server": "npm run test --workspace packages/server",
+    "build": "npm run build --workspace packages/server && npm run build --workspace packages/web",
+    "package:desktop": "npm run build && npm run build --workspace packages/desktop && npm run package --workspace packages/desktop"
+  },
+  "allowScripts": {
+    "electron-winstaller@5.4.0": true
+  }
+}

@@ -1,0 +1,115 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, sans-serif;
+}
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.subtitle {
+  opacity: 0.7;
+  margin-top: -0.5rem;
+}
+
+.consent-gate,
+.job-context {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.consent-gate label,
+.job-context label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.checkbox {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 0.5rem !important;
+}
+
+.question-capture button {
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  background: transparent;
+  cursor: pointer;
+}
+
+.question-capture button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.question-capture button.recording {
+  background: #e0433011;
+  border-color: #e04330;
+}
+
+.live-channels {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.live-transcript {
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.channel-label {
+  font-style: normal;
+  opacity: 0.85;
+  margin-right: 0.25rem;
+}
+
+.hint {
+  opacity: 0.6;
+  margin-top: 0.5rem;
+}
+
+.notice {
+  border: 1px solid #e04330;
+  background: #e0433011;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.qa-card {
+  border: 1px solid #8884;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.qa-card .translation {
+  opacity: 0.65;
+  margin-top: 0.25rem;
+}
+
+.qa-card time {
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.qa-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.source-badge {
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
