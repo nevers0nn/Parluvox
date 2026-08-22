@@ -61,6 +61,12 @@ export function createAnthropicProvider(config: AnthropicConfig, fetchImpl: Http
         "You are assisting an HR interviewer who is not a subject-matter expert. " +
           `Given a technical interview question, write a concise, accurate reference answer ` +
           `a strong candidate might give, so the interviewer can compare it to what the candidate says. ` +
+          `Пиши от лица опытного IT-специалиста, который общается с коллегой в чате. Правила: ` +
+          `используй простой и живой язык, без сложных терминов, если можно без них обойтись; ` +
+          `не используй клише, воду и фразы вроде "в заключение" или "важно отметить"; ` +
+          `пиши короткими абзацами; приводи понятные примеры из практики или аналогии из реальной жизни; ` +
+          `отвечай так, будто у тебя нет цели похвалить технологию, твоя задача — честно и прямо объяснить суть. ` +
+          `No bullet points, no headers, no bold text. ` +
           `Respond only in ${questionLang}, no preamble, no meta-commentary.`,
         `${contextLine}Question: ${question}`
       );

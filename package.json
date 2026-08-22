@@ -16,6 +16,9 @@
     "package:desktop": "npm run build && npm run build --workspace packages/desktop && npm run package --workspace packages/desktop"
   },
   "allowScripts": {
-    "electron-winstaller@5.4.0": true
+    "electron-winstaller@5.4.0": true,
+    "esbuild@0.28.2": true,
+    "esbuild@0.21.5": true,
+    "esbuild@0.25.12": true
   }
 }
